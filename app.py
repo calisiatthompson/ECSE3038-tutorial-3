@@ -26,3 +26,6 @@ def average_temp(devices):
     return average
 #print("Average temperature:", average_temp(readings))
 
+@app.get("/devices")
+async def get_devices():
+    return readings
